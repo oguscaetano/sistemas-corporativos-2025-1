@@ -1,5 +1,16 @@
 # SISTEMAS CORPORATIVOS 2025-1
 
+<style>
+summary {
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 2px rgb(74, 74, 74);
+  margin: 10px 0;
+  list-style: none;
+}
+
+</style>
+
 <details>
 <summary><strong>📕 Ementa</strong></summary>
 
@@ -14,8 +25,8 @@ Fórmula: `A1 + A2`
 
 Descrição:
 
-- A1: Projeto em grupo (4 pessoas);
-- A2: Avaliação teórica (individual).
+- A1: Projeto em grupo (5 pontos)
+- A2: Avaliação teórica individual (5 pontos)
 
 </details> 
 
@@ -37,7 +48,7 @@ Módulos do sistema:
 9. Gestão de funcionários;
 10. Relatórios de contabilidade.
 
-`⚠️ O projeto deverá ser entregue por meio do envio do link do repositório no GitHub.`
+`O projeto deverá ser entregue por meio do envio do link do repositório no GitHub.`
 
 ## Exemplos
 
@@ -56,8 +67,6 @@ Sistema de e-commerce para venda de tênis online.
 9. **Gestão de funcionários**: Controle de funcionários do setor administrativo e suporte ao cliente.
 10. **Relatórios de contabilidade**: Demonstrações financeiras e fluxo de caixa.
 
----
-
 ## 2. Distribuidora de Bebidas (Gestão de Estoque e Contas)
 ERP para distribuidoras que gerencia compras, estoque e faturamento.
 
@@ -72,8 +81,6 @@ ERP para distribuidoras que gerencia compras, estoque e faturamento.
 8. **Gestão de contas a receber**: Faturamento recorrente e cobrança automática.
 9. **Gestão de funcionários**: Administração de equipe de vendas e entregas.
 10. **Relatórios de contabilidade**: Relatórios fiscais e de rentabilidade.
-
----
 
 ## 3. Construtora (Gestão Financeira e Compras)
 Sistema para gerenciamento financeiro e compras em uma construtora.
@@ -90,8 +97,6 @@ Sistema para gerenciamento financeiro e compras em uma construtora.
 9. **Gestão de funcionários**: Folha de pagamento e benefícios para equipe de obras.
 10. **Relatórios de contabilidade**: Análise financeira por projeto.
 
----
-
 ## 4. Rede de Supermercados (Gestão de Estoque, Compras e Contabilidade)
 ERP para supermercados que controla estoque, vendas e finanças.
 
@@ -106,8 +111,6 @@ ERP para supermercados que controla estoque, vendas e finanças.
 8. **Gestão de contas a receber**: Controle de recebíveis de cartões e convênios.
 9. **Gestão de funcionários**: Administração de equipes por setor (atendimento, estoque, gerência).
 10. **Relatórios de contabilidade**: Demonstrativos financeiros e controle de margens.
-
----
 
 ## 5. Clínica Médica (Gestão de Atendimento e Financeiro)
 Sistema para gestão de clínicas médicas e consultórios.
