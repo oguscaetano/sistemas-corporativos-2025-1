@@ -1,14 +1,3 @@
-<style>
-summary {
-  padding: 5px;
-  border: 1px solid black;
-  box-shadow: 3px 3px 2px rgb(74, 74, 74);
-  margin: 10px 0;
-  list-style: none;
-}
-
-</style>
-
 # Métodos Ágeis e Gestão de Equipes
 
 ## 1. Manifesto Ágil: O que é e por que é importante?
