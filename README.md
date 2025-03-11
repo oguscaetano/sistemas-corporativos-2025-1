@@ -14,7 +14,7 @@ Fórmula: `A1 + A2`
 
 Descrição:
 
-- A1: Projeto em grupo (5 pontos)
+- A1: Projeto em grupo (5 pontos) - 4 pessoas
 - A2: Avaliação teórica individual (5 pontos)
 
 </details> 
