@@ -14,15 +14,15 @@ Fórmula: `A1 + A2`
 
 Descrição:
 
-- A1: Projeto em grupo (5 pontos) - 4 pessoas
+- A1: Projeto (5 pontos)
 - A2: Avaliação teórica individual (5 pontos)
 
 </details> 
 
 <details>
-<summary><strong>💻 Projeto em Grupo</strong></summary>
+<summary><strong>💻 Projeto</strong></summary>
 
-`👉 O grupo deverá desenvolver um software com os 10 módulos listados abaixo. Cada módulo tem peso 0.5 na nota do projeto. Para que a nota seja computada, o módulo deve estar implementado/funcionando. O grupo possui a liberdade de escolher qual será o enredo do software.`
+`👉 Você deverá desenvolver um software com os 10 módulos listados abaixo. Cada módulo tem peso 0.5 na nota do projeto. Para que a nota seja computada, o módulo deve estar implementado/funcionando. Você possui a liberdade de escolher qual será o enredo do software.`
 
 Módulos do sistema:
 
