@@ -1,0 +1,14 @@
+GET http://localhost:3000/produtos
+
+###
+
+POST http://localhost:3000/produtos HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "nome": "Nescau",
+    "preco": 5.70,
+    "dataValidade": "2089",
+    "quantidadeEstoque": 899
+}
