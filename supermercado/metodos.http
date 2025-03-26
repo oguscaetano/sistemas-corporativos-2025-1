@@ -7,7 +7,7 @@ content-type: application/json
 
 {
     "id": 1,
-    "nome": "Nescau",
+    "nome": "Nescauu",
     "preco": 5.70,
     "dataValidade": "2089",
     "quantidadeEstoque": 899
