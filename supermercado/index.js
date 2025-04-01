@@ -51,7 +51,24 @@ const produtos = [
     novoProduto.id = produtos.length + 1;
     produtos.push(novoProduto);
     res.status(201).json(novoProduto);
-  })
+  });
+
+  app.put("/produtos/:id", (req, res) => {
+    console.log(req);
+    const id = parseInt(req.params.id);
+    const produtoAtualizado = req.body;
+
+    let index = produtos.findIndex((produto) => produto.id === id);
+
+    if (index !== -1) {
+      produtos[index] = { id, ...produtoAtualizado };
+      res.json(produtos[index]);
+    } else {
+      res.status(404).json({
+        mensagem: "Este produto não existe.",
+      })
+    }
+  });
 
   app.listen(3000, () => {
     console.log("Vai Curintia!");
