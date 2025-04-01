@@ -25,3 +25,8 @@ content-type: application/json
     "dataValidade": "2030",
     "quantidadeEstoque": 2
 }
+
+###
+
+DELETE http://localhost:3000/produtos/1 HTTP/1.1
+content-type: application/json
