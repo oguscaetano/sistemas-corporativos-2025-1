@@ -1,8 +1,10 @@
 const express = require('express');
+const jwt = require('jsonwebtoken');
 
 const app = express();
-
 app.use(express.json());
+
+const SECRET_KEY = 'senha-misteriosa';
 
 const produtos = [
     {
@@ -42,18 +44,58 @@ const produtos = [
     }
   ];
 
-  app.get('/produtos', (req, res) => {
+  app.post('/login', (req, res) => {
+    const { usuario, senha } = req.body;
+
+    if (usuario === 'admin' && senha === '1234') {
+      const token = jwt.sign({ usuario }, SECRET_KEY, {
+        expiresIn: '1h',
+      });
+
+      return res.json({
+        mensagem: 'Login executado com sucesso!',
+        token,
+      })
+    }
+
+    res.status(401).json({
+      mensagem: 'Usuário ou senha inválidos.',
+    })
+  });
+
+  const autenticarToken = (req, res, next) => {
+    const token = req.headers["authorization"];
+
+    if (!token) {
+      return res.status(403).json({
+        mensagem: "Token não encontrado.",
+      })
+    }
+
+    jwt.verify(token, SECRET_KEY, (err, decoded) => {
+      if (err) {
+        return res.status(403).json({
+          mensagem: "Token inválido",
+        })
+      }
+
+      req.usuario = decoded.usuario;
+      next();
+    })
+  };
+
+  app.get('/produtos', autenticarToken, (req, res) => {
     res.json(produtos);
   });
 
-  app.post("/produtos", (req, res) => {
+  app.post("/produtos", autenticarToken, (req, res) => {
     const novoProduto = req.body;
     novoProduto.id = produtos.length + 1;
     produtos.push(novoProduto);
     res.status(201).json(novoProduto);
   });
 
-  app.put("/produtos/:id", (req, res) => {
+  app.put("/produtos/:id", autenticarToken, (req, res) => {
     console.log(req);
     const id = parseInt(req.params.id);
     const produtoAtualizado = req.body;
@@ -70,7 +112,7 @@ const produtos = [
     }
   });
 
-  app.delete("/produtos/:id", (req, res) => {
+  app.delete("/produtos/:id", autenticarToken, (req, res) => {
     const id = parseInt(req.params.id);
 
     let index = produtos.findIndex((produto) => produto.id === id);
