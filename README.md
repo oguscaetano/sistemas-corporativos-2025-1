@@ -29,7 +29,7 @@ Módulos do sistema:
 1. Gestão de materiais;
 2. Inventário de estoque;
 3. Processo de vendas;
-4. README com a descrição do projeto e seus requisitos funcionais e não funcionais;
+4. README com a descrição do projeto, seus requisitos funcionais e não funcionais e o diagrama BPMN;
 5. Carrinho de compras;
 6. Máquinas de estados para representações de vendas;
 7. Gestão de contas a pagar;
