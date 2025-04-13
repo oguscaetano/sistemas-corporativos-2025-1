@@ -1,26 +1,18 @@
 # SISTEMAS CORPORATIVOS 2025-1
 
-<details>
-<summary><strong>📕 Ementa</strong></summary>
+## 📕 Ementa
 
 Desenvolvimento de sistemas computacionais, aplicando técnicas de arquitetura de software voltadas para o suporte a processos empresariais.
 
-</details>
+## 🎯 Avaliações
 
-<details>
-<summary><strong>🎯 Avaliações</strong></summary>
+ID | Data | Avaliação | Peso
+---|------|-----------|-----
+A2 | 03/06 e 10/06 | Projeto | **5 pontos**
+A1 | 17/06/25 | Prova | **5 pontos**
+SUB | 01/07/25 | Prova | Substitutiva
 
-Fórmula: `A1 + A2`
-
-Descrição:
-
-- A1: Projeto (5 pontos)
-- A2: Avaliação teórica individual (5 pontos)
-
-</details> 
-
-<details>
-<summary><strong>💻 Projeto</strong></summary>
+## 💻 Projeto
 
 `👉 Você deverá desenvolver um software com os 10 módulos listados abaixo. Cada módulo tem peso 0.5 na nota do projeto. Para que a nota seja computada, o módulo deve estar implementado/funcionando. Você possui a liberdade de escolher qual será o enredo do software.`
 
@@ -115,5 +107,3 @@ Sistema para gestão de clínicas médicas e consultórios.
 8. **Gestão de contas a receber**: Faturamento de consultas particulares e convênios.
 9. **Gestão de funcionários**: Administração de médicos, recepcionistas e técnicos.
 10. **Relatórios de contabilidade**: Relatórios de faturamento e análise de custos.
-
-</details>
