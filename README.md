@@ -14,7 +14,36 @@ SUB | 01/07/25 | Prova | Substitutiva
 
 ## 💻 Projeto
 
-`👉 Você deverá desenvolver um software com os 10 módulos listados abaixo. Cada módulo tem peso 0.5 na nota do projeto. Para que a nota seja computada, o módulo deve estar implementado/funcionando. Você possui a liberdade de escolher qual será o enredo do software.`
+### Objetivo do Projeto
+Desenvolver uma **API utilizando o padrão REST**, com exportação de dados no formato **JSON**. O pojeto deverá ser construido **individualmente**, com versionamento completo do código utilizando **Git** e publicação em repositório público no **GitHub**.
+
+### 🧑‍💻 Requisitos Técnicos
+- A API deverá ser construída seguindo o padrão REST.
+- Todos os dados deverão ser servidos ou recebidos em formato **JSON**.
+- O código deverá ser versionado com **Git** e enviado para um repositório **público** no **GitHub**.
+- O desenvolvimento será feito **em 1 Pull Request (PR)**. O código da aplicação deverá estar no PR, **sem ser mergeado com a branch `main`**.
+- O aluno deverá realizar **no mínimo 1 commit por semana**, entre os dias **29/04 e 27/05** (total de 5 semanas).
+
+### 📝 Critérios de Avaliação
+A avaliação será feita em **duas partes**:
+
+#### ✅ **1. Commits (2 pontos)**
+- O aluno deverá ter pelo menos **5 commits no total**, um por semana.
+- Serão considerados apenas commits feitos entre **29/04 e 27/05**.
+- Além da quantidade de commits, também será avaliado o conteúdo dos commits.
+- Caso o aluno não possua pelo menos 5 commits, sendo pelo menos 1 por semana, a nota será zerada.
+
+#### ✅ **2. Defesa do Código (3 pontos)**
+- No final do projeto, cada aluno realizará uma **defesa oral do código** com o professor.
+- O professor poderá perguntar sobre:
+  - Estrutura da API
+  - Funcionamento dos endpoints
+  - Organização do projeto
+  - Uso do Git e Pull Requests
+  - Lógica de programação ou qualquer outra pergunta que seja pertinente.
+
+### Descrição do projeto
+`👉 Você deverá desenvolver um software com os 10 módulos listados abaixo. Para que a nota seja computada, o módulo deve estar implementado/funcionando. Você possui a liberdade de escolher qual será o enredo do software.`
 
 Módulos do sistema:
 
