@@ -40,7 +40,20 @@ O ideal seria armazenar um **hash da senha** e verificar o hash no momento do lo
 npm install bcrypt
 ```
 
-### 2. Simule um cadastro
+### 2. Criando uma senha hash de exemplo
+
+Crie um arquivo separado somente para gerar senhas hash.
+
+```js
+const bcrypt = require("bcrypt");
+
+const senha = "1234";
+bcrypt.hash(senha, 10).then(hash => {
+    console.log("Hash gerado:", hash);
+});
+```
+
+### 3. Simule um cadastro
 
 Adicione uma simulação de usuário com senha **criptografada**:
 
@@ -52,19 +65,6 @@ const usuarioFake = {
   nome: "admin",
   senhaHash: "$2b$10$ib0hAnvrNtVcWY2865mkYOLYIzmovOuzwmecvoaozDjXYYsN9Z2mW" // Senha 1234
 };
-```
-
-### 3. Criando uma senha hash
-
-Crie um arquivo separado somente para gerar senhas hash.
-
-```js
-const bcrypt = require("bcrypt");
-
-const senha = "1234";
-bcrypt.hash(senha, 10).then(hash => {
-    console.log("Hash gerado:", hash);
-});
 ```
 
 ### 4. Atualize a rota de login para usar o `bcrypt.compare`
