@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
-const usuariosRoutes = require('./routes/usuarios');
 const produtosRoutes = require('./routes/produtos');
+const authRoutes = require('./routes/auth');
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(session({
 }));
 
 // Rotas
-app.use('/', usuariosRoutes);
+app.use('/', authRoutes);
 app.use('/produtos', produtosRoutes);
 
 app.listen(3000, () => {
