@@ -1,0 +1,32 @@
+GET http://localhost:3000/produtos
+
+###
+
+POST http://localhost:3000/produtos HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "nome": "Nescauu",
+    "preco": 5.70,
+    "dataValidade": "2089",
+    "quantidadeEstoque": 899
+}
+
+###
+
+PUT http://localhost:3000/produtos/1999 HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "nome": "Xalala",
+    "preco": 189.99,
+    "dataValidade": "2030",
+    "quantidadeEstoque": 2
+}
+
+###
+
+DELETE http://localhost:3000/produtos/1 HTTP/1.1
+content-type: application/json
