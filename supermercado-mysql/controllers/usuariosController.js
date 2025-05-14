@@ -7,6 +7,7 @@ async function cadastrar(req, res) {
 
   try {
     const existe = await usuarioModel.buscarPorUsuario(usuario);
+
     if (existe) {
       return res.status(400).json({ mensagem: "Usuário já cadastrado" });
     }
